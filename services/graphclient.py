@@ -24,10 +24,6 @@ class GraphClient:
         url = f"https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'{username}') or startswith(userPrincipalName,'{username}')&$select=displayName,userPrincipalName,mail,jobTitle,mobilePhone,id"
         return requests.get(url, headers=self.headers).json()
     
-    def graph_get_user_groups(self, user_id):
+    def graph_get_user_groups(self, user_id): #On peut recuperer les roles et les groupes dans la meme requete
         url = f"https://graph.microsoft.com/v1.0/users/{user_id}/memberOf?$select=displayName"
-        return requests.get(url, headers=self.headers).json()
-    
-    def graph_get_user_roles(self, user_id):
-        url = f"https://graph.microsoft.com/v1.0/users/{user_id}/transitiveMemberOf/microsoft.graph.directoryRole?$select=displayName"
         return requests.get(url, headers=self.headers).json()
