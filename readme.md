@@ -20,10 +20,9 @@
 
 ## Aperçu
 
-![Dashboard](screenshots/dashboard.png)
-![Recherche utilisateur](screenshots/user_details.png)
-![Utilisateurs inactifs](screenshots/inactive_users.png)
-![Recherche groupe](screenshots/group_search.png)
+![Recherche utilisateur](screenshots/user_details1.png)
+![Utilisateurs inactifs](screenshots/inactive_users1.png)
+![Recherche groupe](screenshots/group_search1.png)
 
 ---
 
